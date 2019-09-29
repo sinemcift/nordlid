@@ -14,3 +14,9 @@
 	line-height: 33px;
 	font-size: 1.35em;
 }
+.d-flex {
+	display: block;
+}
+.info-txt-container {
+	margin-bottom: 25px;
+}
