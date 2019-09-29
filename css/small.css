@@ -10,9 +10,13 @@
 .display-sm-none {
 	display: none;
 }
+.display-lg-none {
+	display: block;
+}
 .header-txt {
 	line-height: 33px;
-	font-size: 1.35em;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 .d-flex {
 	display: block;
@@ -24,5 +28,18 @@
 	width: 100%;
 }
 .carousel-caption {
-	font-size: 18px;
+	font-size: 1.7em;
+	line-height: 1.3em;
+}
+i{
+	font-size: 2em;
+}
+#image-1 {
+	content:url("../images/mobile-12.jpg");
+}
+#image-2 {
+	content:url("../images/mobile-1.jpg");
+}
+#image-3 {
+	content:url("../images/mobile-17.jpg");
 }
