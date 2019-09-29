@@ -20,3 +20,6 @@
 .info-txt-container {
 	margin-bottom: 25px;
 }
+.registerForm input[type="submit"]{
+	width: 100%;
+}

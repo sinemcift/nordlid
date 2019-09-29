@@ -72,14 +72,26 @@ i {
 	opacity: 1;
 }
 /* form */
-.send-btn {
+/* .send-btn {
 	background-color: #e6007e;
 	border: none;
 	color: #fff;
 	font-weight: 500;
 	padding: 10px 0;
 	font-size: 1.2em;
+} */
+
+.registerForm input[type="submit"]{
+	width: 50%;
+    background: #e6007e;
+    margin-top: 10px;
+    border-radius: 0;
+	padding: 15px 5px;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
 }
+
 input[type="text"], input[type="email"] {
 	padding: 10px 0;
 	width: 100%;
@@ -89,7 +101,7 @@ input[type="text"], input[type="email"] {
 input:focus {
 	outline:none;
 }
-
+/* 
 input[type="submit"]{
 	border-bottom: none;
 	background-color: #e6007e;
@@ -98,7 +110,7 @@ input[type="submit"]{
 	font-size: 1.2em;
 	margin-top: 20px;
 	width: 50%;
-}
+} */
 form div {
 	position: relative;
 }
@@ -108,7 +120,36 @@ form div label {
 	left: 0;
 	pointer-events: none;
 	color: #304a5f;	
+	z-index:1000;
 }
+.form-control{
+	border-radius: 0;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid, .form-control.is-valid, .was-validated .form-control:valid {
+	border-color: #e6007e;	
+}
+
+.invalid-feedback {
+	color: #e6007e;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid, .form-control.is-valid, .was-validated .form-control:valid {
+	background-image: none;
+}
+
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus,.form-control.is-valid:focus, .was-validated .form-control:valid:focus  {
+	box-shadow: none;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+
+.registerForm .form-control:focus{
+	box-shadow:none;
+	border-color: #e6007e;
+}
+
 input:focus ~ label, input:valid ~ label{
 	top: 10px;
 	left: 0px;
@@ -176,23 +217,11 @@ input:focus, input:valid {
 	  font-size:14px;
   }
 
-  /* On mouse-over, add a grey background color */
-  /* .checkbox-container:hover input ~ .checkmark {
-	background-color: #ffffff;
-  }
-   */
   /* When the checkbox is checked, add a blue background */
   .checkbox-container input:checked ~ .checkmark {
 	background-color: #e6007e;
   }
   
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* .checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-  }
-   */
   /* Show the checkmark when checked */
   .checkbox-container input:checked ~ .checkmark:after {
 	display: block;

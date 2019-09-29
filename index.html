@@ -21,7 +21,7 @@
 <body>
 	<div class="container-fluid fixed-top bg_1">
 		<div class="container">
-			<nav class="navbar">
+			<nav class="navbar" id="headernav">
 				<a class="navbar-brand" href="#">
 					<img src="images/logo.png" alt="Nordlid" onclick="ScrollTop()" id="toTop">
 				</a>
@@ -84,23 +84,42 @@
 					quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
 					qui</p>
 				<!-- action="https://s2331.t.eloqua.com/e/f2" -->
-				<form action="" id="myForm">
+				<form id="registerForm" class="registerForm" novalidate>
+					<input type="hidden" name="elqFormName" value="cph-business">
+					<input type="hidden" name="elqSiteID" value="2331">
+
 					<div>
-						<input class="mt-3" type="text" name="" required="">
-						<label for="">Navn</label>
+						<div class="input-group">
+							<input class="mt-3 form-control" type="text" name="navn" id="navn" required>
+							<div class="invalid-feedback">
+								UPS! Du mangler at udfylde noget.
+							</div>
+							<label for="navn">Navn</label>
+						</div>
 					</div>
 
 					<div>
-						<input class="mt-3" type="email" name="" required="">
-						<label for="">Email</label>
+						<div class="input-group">
+							<input class="mt-3 form-control" type="email" name="email" id="email" required>
+							<div class="invalid-feedback">
+								UPS! Du mangler at udfylde noget.
+							</div>
+							<label for="navn">Email</label>
+						</div>
 					</div>
 
 					<div>
-						<input class="mt-3" type="text" name="" required="">
-						<label for="">Tlf</label>
+						<div class="input-group">
+							<input class="mt-3 form-control" type="text" name="tlf" id="tlf" required>
+							<div class="invalid-feedback">
+								UPS! Du mangler at udfylde noget.
+							</div>
+							<label for="navn">Tlf</label>
+						</div>
 					</div>
+
 					<label class="checkbox-container">
-						<input type="checkbox" checked="checked">
+						<input type="checkbox" />
 						<span class="checkmark"></span>
 					</label>
 					<div class="checkbox-label-div">
@@ -108,8 +127,8 @@
 						bruge min data til interne
 						projekter. Jeg kan til hver en tid tilbagekalde min accept.
 					</div>
-					<div class="sub-btn">
-						<input type="submit" name="" value="SEND">
+					<div>
+						<input type="submit" name="" class="btn" value="SEND">
 					</div>
 				</form>
 			</div>
@@ -163,43 +182,8 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 
-	<script>
-		document.addEventListener("click" ScrollTop);
-		function ScrollTop() {
-			window.scrollTo(0, 0);
-		}
-		//når den er mindre end 900px bred 	
-
-		var mq = window.matchMedia("(max-width: 900px)");
-
-		if (mq.matches) {
-			var headernav = document.querySelector('#headernav');
-
-			//Farven på navigations baren når den er mindre mindre end 570px, Tablet og mobil.
-			headernav.style.background = "hsla(0,0%,100%,1.00)"; //Farven på boxen under nav linjen //
-			headernav.style.boxShadow = "0px 1px 20px hsla(0,0%,0%,0.15)" // Shadow på nav boxen //
-		}
-
-		else {
-			var desktop_header = document.querySelector('#headernav');
-
-			window.onscroll = function () {
-
-				if (window.pageYOffset > 70) {  //Tallet 40 indikere hvor meget man skal rulle ned før at boxen dukker op//
-
-					//Farven på boxen under nav linjen
-					desktop_header.style.background = "hsla(0,0%,100%,0.90)";
-					// Shadow på nav boxen
-					desktop_header.style.boxShadow = "0px 1px 20px hsla(0,0%,0%,0.10)"
-				}
-
-				else {
-					desktop_header.style.background = "transparent" //The color of the nav box, will NOT appear if one doesn't scroll down the page//
-					desktop_header.style.boxShadow = "none" //shadow under the nav box wont appear if one doesn't scroll down the page//
-				}
-			}
-		}	
-	</script>
+	<script src="js/main.js"></script>
+	<script src="js/validation.js"></script>
 </body>
 
 </html>
