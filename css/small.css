@@ -23,3 +23,6 @@
 .registerForm input[type="submit"]{
 	width: 100%;
 }
+.carousel-caption {
+	font-size: 18px;
+}
