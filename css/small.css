@@ -1,11 +1,9 @@
+/* Grid*/
 .pb-sm-2 {
 	padding-bottom: 1rem;
 }
 .pb-sm-3 {
 	padding-bottom: 3rem;
-}
-.icon-size {
-	width: 25%;
 }
 .display-sm-none {
 	display: none;
@@ -13,20 +11,28 @@
 .display-lg-none {
 	display: block;
 }
+
+/* Info area */
+.icon-size {
+	width: 25%;
+}
+.info-txt-container {
+	margin-bottom: 25px;
+}
+
+/* Text */
 .header-txt {
 	line-height: 33px;
 	font-size: 1.5em;
 	font-weight: 300;
 }
-.d-flex {
-	display: block;
-}
-.info-txt-container {
-	margin-bottom: 25px;
-}
+
+/* Form */
 .registerForm input[type="submit"]{
 	width: 100%;
 }
+
+/* Carousel */
 .carousel-caption {
 	font-size: 1.7em;
 	line-height: 1.3em;

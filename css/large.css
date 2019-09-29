@@ -35,21 +35,19 @@ html {
 .display-lg-none{
 	display: none;
 }
+
+/* Text */
+.header-txt{
+	font-size: 2em;
+	font-weight: 300;
+}
 p {
 	font-family: 'Open Sans', sans-serif;
 	color: #304a5f;
 	margin-bottom: 0;
 }
 
-i {
-	font-size: 3em;
-	color: #fff;
-}
-/*text*/
-.header-txt{
-	font-size: 2em;
-	font-weight: 300;
-}
+/* Info area */
 .icon-size {
 	width: 130px;
 }
@@ -62,11 +60,12 @@ i {
 .info-width {
 	width: 260px;
 }
-.white{
-	color: #fff;
-}
 
 /*carousel*/
+i {
+	font-size: 3em;
+	color: #fff;
+}
 .carousel-1{
 	background-image: url(../images/1.jpg);
 }
@@ -87,7 +86,6 @@ i {
 }
 
 /* Form */
-
 .registerForm input[type="submit"]{
 	width: 50%;
     background: #e6007e;
@@ -133,6 +131,7 @@ form div label {
 
 .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus,.form-control.is-valid:focus, .was-validated .form-control:valid:focus  {
 	box-shadow: none;
+	border-color: #e6007e;
 }
 .btn.focus, .btn:focus {
 	box-shadow: none;

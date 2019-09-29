@@ -17,12 +17,3 @@
     }, false);
 })();
 
-
-$(document)
-(function(){
-
-})();
-
-function myFunction(){
-
-}
